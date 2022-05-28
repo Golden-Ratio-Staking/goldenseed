@@ -9,4 +9,4 @@ COPY . .
 # Install minimum necessary dependencies
 RUN apk add --no-cache make gcc libc-dev
 
-RUN make install
+RUN go install .
