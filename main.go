@@ -17,7 +17,7 @@ import (
 )
 
 var (
-	configDir = ".tinyseed"
+	configDir = ".goldenseed"
 	logger    = log.NewTMLogger(log.NewSyncWriter(os.Stdout))
 )
 
@@ -36,13 +36,13 @@ type Config struct {
 // DefaultConfig returns a seed config initialized with default values
 func DefaultConfig() *Config {
 	return &Config{
-		ListenAddress:       "tcp://0.0.0.0:6969",
+		ListenAddress:       "tcp://0.0.0.0:1618",
 		ChainID:             "osmosis-1",
 		NodeKeyFile:         "node_key.json",
 		AddrBookFile:        "addrbook.json",
 		AddrBookStrict:      true,
-		MaxNumInboundPeers:  3000,
-		MaxNumOutboundPeers: 1000,
+		MaxNumInboundPeers:  1618,
+		MaxNumOutboundPeers: 618,
 		Seeds:               "1b077d96ceeba7ef503fb048f343a538b2dcdf1b@136.243.218.244:26656,2308bed9e096a8b96d2aa343acc1147813c59ed2@3.225.38.25:26656,085f62d67bbf9c501e8ac84d4533440a1eef6c45@95.217.196.54:26656,f515a8599b40f0e84dfad935ba414674ab11a668@osmosis.blockpane.com:26656",
 	}
 }
@@ -85,7 +85,7 @@ func MkdirAllPanic(path string, perm os.FileMode) {
 	}
 }
 
-// Start starts a Tenderseed
+// Start starts a goldenseed
 func Start(seedConfig Config) {
 
 	chainID := seedConfig.ChainID
