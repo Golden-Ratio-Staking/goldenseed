@@ -1,4 +1,4 @@
-# Tinyseed
+# NEEDS UPDATE. IGNORE ALL OF THIS FOR NOW.
 
 ## TinySeed is a fork of Binary Holding's Tenderseed, which is a fork of Polychain's Tenderseed
 
@@ -10,9 +10,8 @@ It is used to pinpoint centralization of network in common infrastructure hosts 
 ### Configuration
 
 ```bash
-git clone https://github.com/notional-labs/tinyseed
-cd tinyseed
-go mod tidy
+git clone https://github.com/Golden-Ratio-Staking/goldenseed
+cd goldenseed
 go install .
 tinyseed
 ```
