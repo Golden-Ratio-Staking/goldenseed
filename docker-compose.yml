@@ -3,34 +3,34 @@ services:
     image: goldenratiostaking/goldenseed:latest
     environment:
       - ID=bitcanna-1
-      - SEEDS=
+      - SEEDS=d6aa4c9f3ccecb0cc52109a95962b4618d69dd3f@seed1.bitcanna.io:26656,23671067d0fd40aec523290585c7d8e91034a771@seed2.bitcanna.io:26656
     ports:
       - 16222:16222
     restart: always
   
-  chihuahua:
-    image: goldenratiostaking/goldenseed:latest
-    environment:
-      - ID=chihuahua-1
-      - SEEDS=
-    ports:
-      - 16183:16183
-    restart: always
-    
   cerberus:
     image: goldenratiostaking/goldenseed:latest
     environment:
       - ID=cerberus-chain-1
-      - SEEDS=
+      - SEEDS=4c3abff6e4a3e93b84babfc95df854861f83ac82@cerberus-seed.blockpane.com:26656
     ports:
       - 16184:16184
+    restart: always
+    
+  chihuahua:
+    image: goldenratiostaking/goldenseed:latest
+    environment:
+      - ID=chihuahua-1
+      - SEEDS=4936e377b4d4f17048f8961838a5035a4d21240c@chihuahua-seed-01.mercury-nodes.net:29540
+    ports:
+      - 16183:16183
     restart: always
     
   cosmos:
     image: goldenratiostaking/goldenseed:latest
     environment:
       - ID=cosmoshub-4
-      - SEEDS=
+      - SEEDS=bf8328b66dceb4987e5cd94430af66045e59899f@public-seed.cosmos.vitwit.com:26656,cfd785a4224c7940e9a10f6c1ab24c343e923bec@164.68.107.188:26656,d72b3011ed46d783e369fdf8ae2055b99a1e5074@173.249.50.25:26656,ba3bacc714817218562f743178228f23678b2873@public-seed-node.cosmoshub.certus.one:26656,3c7cad4154967a294b3ba1cc752e40e8779640ad@84.201.128.115:26656,366ac852255c3ac8de17e11ae9ec814b8c68bddb@51.15.94.196:26656,bcef90de8a83673c336bf3b3a352445b3a3a1f08@cosmos-seed.sunshinevalidation.io:31038
     ports:
       - 16181:16181
     restart: always
@@ -39,7 +39,7 @@ services:
     image: goldenratiostaking/goldenseed:latest
     environment:
       - ID=dig-1
-      - SEEDS=
+      - SEEDS=37b2839da4463b22a51b1fe20d97992164270eba@62.171.157.192:26656,e2c96b96d4c3a461fb246edac3b3cdbf47768838@65.21.202.37:6969
     ports:
       - 16185:16185
     restart: always
@@ -48,7 +48,7 @@ services:
     image: goldenratiostaking/goldenseed:latest
     environment:
       - ID=emoney-3
-      - SEEDS=
+      - SEEDS=708e559271d4d75d7ea2c3842e87d2e71a465684@seed-1.emoney.validator.network:28656,336cdb655ea16413a8337e730683ddc0a24af9de@seed-2.emoney.validator.network:28656,ecec8933d80da5fccda6bdd72befe7e064279fc1@207.180.213.123:26676,0ad7bc7687112e212bac404670aa24cd6116d097@50.18.83.75:26656,1723e34f45f54584f44d193ce9fd9c65271ca0b3@13.124.62.83:26656,34eca4a9142bf9c087a987b572c114dad67a8cc5@172.105.148.191:26656,0b186517e4d82eb4c000a567e486b7b96bf19752@44.195.95.22:26656,eed66085c975189e3d498fe61af2fcfb3da34924@217.79.184.40:26656,226d713acb10a1cd09b3b890406b886d7b071cf2@10.105.2.101:26656,552cb87c40f879c8c41005eeb36030502671e7a4@18.156.91.213:26656,170255a4a9b120786d2d6c3931ebf0125087cca0@62.171.171.139:26656,d12ac664ff9766e0535c836173111e3eed462e79@185.144.83.157:26656
     ports:
       - 16186:16186
     restart: always
@@ -57,7 +57,7 @@ services:
     image: goldenratiostaking/goldenseed:latest
     environment:
       - ID=evmos_9001-2
-      - SEEDS=
+      - SEEDS=906840c2f447915f3d0e37bc68221f5494f541db@3.39.58.32:26656,7aa31684d201f8ebc0b1e832d90d7490345d77ee@52.10.99.253:26656,5740e4a36e646e80cc5648daf5e983e5b5d8f265@54.39.18.27:26656,de2c5e946e21360d4ffa3885579fa038a7d9776e@46.101.148.190:26656,588cedb70fa1d98c14a2f2c1456bfa41e1a156a8@evmos-sentry.mercury-nodes.net:29539
     ports:
       - 16187:16187
     restart: always
@@ -66,7 +66,7 @@ services:
     image: goldenratiostaking/goldenseed:latest
     environment:
       - ID=juno-1
-      - SEEDS=
+      - SEEDS=2484353dab0b2c1275765b8ffa2c50b3b36158ca@seed-node.junochain.com:26656,ef2315d81caa27e4b0fd0f267d301569ee958893@juno-seed.blockpane.com:26656
     ports:
       - 16188:16188
     restart: always
@@ -75,19 +75,16 @@ services:
     image: goldenratiostaking/goldenseed:latest
     environment:
       - ID=nomic-stakenet-2
-      - SEEDS=
+      - SEEDS=238120dfe716082754048057c1fdc3d6f09609b5@161.35.51.124:26656,a67d7a4d90f84d5c67bfc196aac68441ba9484a6@167.99.119.196:26659
     ports:
-      - 26656:26656
+      - 16189:16189
     restart: always
     
   osmo:
     image: goldenratiostaking/goldenseed:latest
     environment:
       - ID=osmosis-1
-      - SEEDS=
+      - SEEDS=f515a8599b40f0e84dfad935ba414674ab11a668@osmosis.blockpane.com:26656,83adaa38d1c15450056050fd4c9763fcc7e02e2c@ec2-44-234-84-104.us-west-2.compute.amazonaws.com:26656,23142ab5d94ad7fa3433a889dcd3c6bb6d5f247d@95.217.193.163:26656,f82d1a360dc92d4e74fdc2c8e32f4239e59aebdf@95.217.121.243:26656,e437756a853061cc6f1639c2ac997d9f7e84be67@144.76.183.180:26656,7c66126b64cd66bafd9ccfc721f068df451d31a3@osmosis-seed.sunshinevalidation.io:9393
     ports:
       - 16190:16190
-    restart: always  
-    
-    
-  
+    restart: always
