@@ -33,17 +33,30 @@ Finally, start the containers (seed nodes):
 sudo docker compose up -d
 ```
 
-## Helpful Commands
+## Helpful Info/Commands
 
-View Full Logs
+For your Seed Node to be useful, you'll need to have an address to give out...like this: 
 ```
-sudo docker compose logs
+<NodeKey>@<ipaddress>:<port>
+2c2f8d8d666f8ecefc94d7870f616c9b5bf09005@2.1.12.135:1618
 ```
 
-View Node Key
+To find this info:
+
+View Node Key:
 ```
 sudo docker compose logs | grep "key"
 ```
+View ip address:
+```
+curl -4 ifconfig.co
+```
+View Port of Seed Nodes:
+```
+sudo docker ps
+```
+
+
 ## License
 
 [Blue Oak Model License 1.0.0](https://blueoakcouncil.org/license/1.0.0)
