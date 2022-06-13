@@ -1,6 +1,6 @@
 # NEEDS UPDATE. IGNORE ALL OF THIS FOR NOW.
 
-## TinySeed is a fork of Binary Holding's Tenderseed, which is a fork of Polychain's Tenderseed
+## GoldenSeed is a fork of Notional Lab's TinySeed, which is a fork of Binary Holding's Tenderseed, which is a fork of Polychain's Tenderseed.
 
 This tool runs a seed node for any tendermint based blockchain, crawls the network and generates a map with the geolocalisation of the peers.
 
