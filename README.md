@@ -74,6 +74,11 @@ View Address Book Size, it updates every 2 minutes, so this will only grab last 
 sudo docker compose logs --since 2m | grep "size"
 ```
 
+Get Container IP address
+```
+sudo docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <goldenseed-cosmos-1>
+```
+
 ## License
 
 [Blue Oak Model License 1.0.0](https://blueoakcouncil.org/license/1.0.0)
