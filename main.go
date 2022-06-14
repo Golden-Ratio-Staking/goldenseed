@@ -36,14 +36,14 @@ type Config struct {
 // DefaultConfig returns a seed config initialized with default values
 func DefaultConfig() *Config {
 	return &Config{
-		ListenAddress:       "tcp://0.0.0.0:1618",
-		ChainID:             "osmosis-1",
+		ListenAddress:       "tcp://0.0.0.0:16187",
+		ChainID:             "evmos_9001-2",
 		NodeKeyFile:         "node_key.json",
 		AddrBookFile:        "addrbook.json",
 		AddrBookStrict:      true,
-		MaxNumInboundPeers:  1618,
-		MaxNumOutboundPeers: 618,
-		Seeds:               "1b077d96ceeba7ef503fb048f343a538b2dcdf1b@136.243.218.244:26656,2308bed9e096a8b96d2aa343acc1147813c59ed2@3.225.38.25:26656,085f62d67bbf9c501e8ac84d4533440a1eef6c45@95.217.196.54:26656,f515a8599b40f0e84dfad935ba414674ab11a668@osmosis.blockpane.com:26656",
+		MaxNumInboundPeers:  5000,
+		MaxNumOutboundPeers: 5000,
+		Seeds:               "906840c2f447915f3d0e37bc68221f5494f541db@3.39.58.32:26656,7aa31684d201f8ebc0b1e832d90d7490345d77ee@52.10.99.253:26656,5740e4a36e646e80cc5648daf5e983e5b5d8f265@54.39.18.27:26656,de2c5e946e21360d4ffa3885579fa038a7d9776e@46.101.148.190:26656,588cedb70fa1d98c14a2f2c1456bfa41e1a156a8@evmos-sentry.mercury-nodes.net:29539",
 	}
 }
 
