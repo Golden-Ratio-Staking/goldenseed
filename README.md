@@ -33,7 +33,9 @@ Finally, start the containers (seed nodes):
 sudo docker compose up -d
 ```
 
-## Helpful Info/Commands
+## Helpful/Necessary Info
+
+You need to be in the `goldenseed` directory for docker compose commands to work.
 
 For your Seed Node to be useful, you'll need to have an address to give out...like this: 
 ```
@@ -56,6 +58,11 @@ View Port of Seed Nodes:
 sudo docker ps
 ```
 
+## Other Helpful Info/Commands
+View Address Book Size, it updates every 2 minutes, so this will only grab last 2 minutes of logs to limit repeated entries:
+```
+sudo docker compose logs --since 2m | grep "size"
+```
 
 ## License
 
