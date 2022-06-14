@@ -51,7 +51,7 @@ View ip address:
 ```
 curl -4 ifconfig.co
 ```
-View Port of Seed Nodes:
+View List & Ports of Seed Nodes:
 ```
 sudo docker ps
 ```
