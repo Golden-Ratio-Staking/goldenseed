@@ -71,6 +71,8 @@ Rebuild whatever container you'd like:
 sudo docker compose up -d <name of service (cerberus, cosmos, evmos, etc)>
 ```
 
+***NOTE: THIS WILL CHANGE YOUR NODE KEY AND WHICH WILL CHANGE YOUR SEED NODE ADDRESS***
+
 ## Other Helpful Info/Commands
 View Address Book Size, it updates every 2 minutes, so this will only grab last 2 minutes of logs to limit repeated entries:
 ```
