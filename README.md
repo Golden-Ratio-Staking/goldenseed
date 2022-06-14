@@ -7,7 +7,7 @@ It is used to pinpoint centralization of network in common infrastructure hosts 
 
 ## Configuration
 
-You can run this straight up with screen (or service file), OR you can use `Docker Compose` to run multiple seed nodes at once, with the meticulously crafted (and often updated) `docker-compose.yml` I created with all the seeds listed from comsos.directory. We will focus on the seed node maxi portion here.
+You can run this straight up, with aservice file, OR you can use `Docker Compose` to run multiple seed nodes on multiple chains at once. It uses the meticulously crafted (and often updated) `docker-compose.yml` I created with all the seeds listed from comsos.directory and some extras farmed from discord/etc. We will focus on the seed node maxi portion of running in Docker.
 
 First, you're going to need Docker. Here's a script to get the latest version.
 ```
