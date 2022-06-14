@@ -59,6 +59,8 @@ sudo docker ps
 ## How to update:
 From time to time, I update list of seeds to make sure there is ample opportunity to fill address book for new users. If you're rebuilding a container, this is how to partake.
 
+***NOTE: REBUILDING DOCKER CONTAINER WILL CHANGE YOUR NODE KEY AND WHICH WILL CHANGE YOUR SEED NODE ADDRESS***
+
 Pull changes into the directory:
 ```
 cd $HOME
@@ -70,8 +72,6 @@ Rebuild whatever container you'd like:
 ```
 sudo docker compose up -d <name of service (cerberus, cosmos, evmos, etc)>
 ```
-
-***NOTE: THIS WILL CHANGE YOUR NODE KEY AND WHICH WILL CHANGE YOUR SEED NODE ADDRESS***
 
 ## Other Helpful Info/Commands
 View Address Book Size, it updates every 2 minutes, so this will only grab last 2 minutes of logs to limit repeated entries:
