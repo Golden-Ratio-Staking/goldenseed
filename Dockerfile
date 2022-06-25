@@ -7,10 +7,8 @@ WORKDIR /goldenseed
 COPY . .
 
 # Install minimum necessary dependencies
-RUN apk add --no-cache make gcc libc-dev 
 RUN apk update
-RUN apk add nano
-RUN apk add tree
+RUN apk add --no-cache make gcc libc-dev nano tree ufw
 RUN go install .
 
 CMD goldenseed
