@@ -1,8 +1,4 @@
 FROM golang:alpine as builder
-RUN apt update
-RUN apt upgrade -y
-RUN apt install nano
-RUN apt install tree
 
 # Set workdir
 WORKDIR /goldenseed
@@ -12,6 +8,9 @@ COPY . .
 
 # Install minimum necessary dependencies
 RUN apk add --no-cache make gcc libc-dev 
+RUN apk update
+RUN apk add nano
+RUN apk add tree
 RUN go install .
 
 CMD goldenseed
