@@ -11,7 +11,11 @@ You can run this straight up, with aservice file, OR you can use `Docker Compose
 
 First, you're going to need Docker. Here's a script to get the latest version.
 ```
-curl https://raw.githubusercontent.com/Golden-Ratio-Staking/GoldenRatioNodes/main/scripts/docker_bootstrap.sh | bash
+cd $HOME
+git clone https://github.com/Golden-Ratio-Staking/golden-nodes
+git pull
+cd golden-nodes/scripts
+bash docker_bootstrap.sh
 ```
 
 Test to see if `Docker` is properly installed:
